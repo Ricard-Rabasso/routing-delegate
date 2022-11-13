@@ -32,7 +32,7 @@ export class ListadoRoutingModule {
   addDynamicChildRoutes(newRoutes:any[]): void {
     this.router.config.forEach((rootRoute: any) => {
       newRoutes.forEach((newRoute: any) => {
-        if (rootRoute._loadedConfig && rootRoute.path === newRoute.rootPath) {
+        if (newRoute.rootPath && rootRoute._loadedConfig && rootRoute.path === newRoute.rootPath) {
           rootRoute._loadedConfig.routes = [
             ...rootRoute._loadedConfig.routes,
             ...newRoute.routes
