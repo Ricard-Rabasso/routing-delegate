@@ -1,9 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Router, RouterModule, Routes } from '@angular/router';
-import { timer } from 'rxjs';
+import { Router, Routes } from '@angular/router';
 import { routes } from './app-routing.module';
-import { HomeComponent } from './home/home.component';
-import { NotFoundComponent } from './not-found/not-found.component';
 
 @Injectable()
 export class AppInitService {
